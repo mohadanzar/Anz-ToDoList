@@ -1,0 +1,215 @@
+.todo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #001214;
+    color: white;
+    transition: 0.3s linear;
+    overflow: hidden;
+}
+
+.todo-container header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 25vh;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.todo-container h1 {
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.date-time {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form form div {
+    display: flex;
+}
+
+.todo-input {
+    padding: 15px;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 400px;
+    background-color: #fff;
+    color: #000;
+}
+
+.todo-button {
+    padding: 15px 25px;
+    font-size: 1.6rem;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+    background-color: #2980b9;
+}
+
+.myUnOrdList {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 2rem;
+}
+
+.myUnOrdList ul {
+    width: 100%;
+    max-width: 600px;
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item span {
+    color: #000;
+    font-size: 1.6rem;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.check-btn,
+.delete-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.check-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.check-btn:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Style for the React icons */
+.check-btn svg,
+.delete-btn svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+/* For completed tasks */
+.checkList {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.check-btn {
+    background-color: transparent;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.check-btn.checked {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.todo-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.clear-btn {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .todo-container h1 {
+        font-size: 3.5rem;
+    }
+    
+    .date-time {
+        font-size: 1.6rem;
+    }
+    
+    .todo-input {
+        width: 100%;
+    }
+    
+    .todo-button {
+        padding: 15px 20px;
+    }
+}
